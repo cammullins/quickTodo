@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week ToDo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="week">
+        <div class="day col-wrap" id="monday">
+            <h2>Monday</h2>
+            <ul id="monday-list" class="connectedSortable"></ul>
+        </div>
+        <div class="day col-wrap" id="tuesday">
+            <h2>Tuesday</h2>
+            <ul id="tuesday-list" class="connectedSortable"></ul>
+        </div>
+        <div class="day col-wrap" id="wednesday">
+            <h2>Wednesday</h2>
+            <ul id="wednesday-list" class="connectedSortable"></ul>
+        </div>
+        <div class="day col-wrap" id="thursday">
+            <h2>Thursday</h2>
+            <ul id="thursday-list" class="connectedSortable"></ul>
+        </div>
+        <div class="day col-wrap" id="friday">
+            <h2>Friday</h2>
+            <ul id="friday-list" class="connectedSortable"></ul>
+        </div>
+    </div>
+    <div class="todos">
+        <div class="col-wrap">
+            <h1>To Do:</h1>
+            <ul id="todo-list" class="connectedSortable"></ul>
+        </div>
+        <div class="col-wrap">
+            <h1>Done:</h1>
+            <ul id="done-list" class="connectedSortable"></ul>
+        </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Project Title</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Here we can provide a project description, a video:
+                    <div>
+                        <iframe width="100%" height="350"
+                            src="https://www.youtube.com/embed/b6vSf0cA9qY?t=30s"></iframe>
+                    </div>
+                </div>
+                <p>A submission link</p>
+                <div id="formwrap">
+                    <form action="#">
+                        <legend for="urlsubmit">Submit Github url:</legend>
+                        <input type="text">
+                        <input type="submit" class="btn-success">
+                    </form>
+                </div>
+                <p>and a link to a page with a fuller description <a
+                        href="https://media.istockphoto.com/photos/palm-trees-picture-id518873314?k=6&m=518873314&s=612x612&w=0&h=H5dFaVZgUrC5mQTKUTf7MDczBTzPgk1NqPxwpFdAmP4=">here</a>
+                </p>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
