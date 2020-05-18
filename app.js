@@ -20,6 +20,8 @@ app.post('/todos', (req, res) => {
 
     let { id, day } = req.body;
 
+    console.log(todoListPath)
+
     fs.readFile(todoListPath, 'utf8', (err, todos) => {
         if (err) {
             console.log("File read failed:", err)
